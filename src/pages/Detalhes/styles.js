@@ -45,6 +45,7 @@ export const Container = styled.div`
         line-height: 130%;
         margin-bottom: 1rem;
         font-size: 110%;
+        background: url();
     }
 
     release-date{

@@ -2,26 +2,29 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { APIKey } from "../../config/key";
 import { Container } from "./styles";
+import styled from "styled-components";
 
-function Detalhes() {
+function Detalhes() { 
 
     const { id } = useParams()
 
     const [movie, setMovie] = useState({})
     const image_path = 'https://image.tmdb.org/t/p/w500'
+    const back_path = 'https://image.tmdb.org/t/p/w500'
 
     useEffect(() => {
-        fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${APIKey}&language=en-US&page=1`)
+        fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${APIKey}&language=pt-BR&page=1`)
         .then(response => response.json())
         .then(data => {
 
-            const {title, poster_path, overview, release_date} = data
+            const {title, poster_path, backdrop_path, overview, release_date} = data
 
             const movie = {
                 id,
                 title,
                 sinopse: overview,
                 image: `${image_path}${poster_path}`,
+                fundo: `${back_path}${backdrop_path}`,
                 releaseDate: release_date
             }
             setMovie(movie)
@@ -30,7 +33,10 @@ function Detalhes() {
 
     return (
         <Container>
-            <div className="movie">
+            <div className="movie" style={{background: `url(${movie.fundo})`,
+                                        
+                                        
+        }}>
                 <img src={movie.image} alt={movie.sinopse}/>
                 <div className="detalhes">
                     <h1>{movie.title}</h1>
