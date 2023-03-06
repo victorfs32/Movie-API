@@ -12,7 +12,7 @@ function Detalhes() {
     const back_path = 'https://image.tmdb.org/t/p/w500'
 
     useEffect(() => {
-        fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${APIKey}&language=en-US&page=1`)
+        fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${APIKey}&language=pt-BR&page=1`)
         .then(response => response.json())
         .then(data => {
 
