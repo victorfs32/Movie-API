@@ -1,7 +1,8 @@
-import styled from "styled-components";
+import styled from "styled-components"; 
 
 export const Container = styled.div`
     
+    margin: 3rem;
     padding: 3rem 0;
     
     h1{
@@ -10,9 +11,14 @@ export const Container = styled.div`
     }
 
     .movie{
+        position: relative;
+        height: 450px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 20px;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 40px;
     }
 
     img{
