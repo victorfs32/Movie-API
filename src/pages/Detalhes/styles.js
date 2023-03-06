@@ -6,6 +6,7 @@ export const Container = styled.div`
     
     h1{
         margin: 3rem 0;
+        color: white;
     }
 
     .movie{
@@ -45,7 +46,7 @@ export const Container = styled.div`
         line-height: 130%;
         margin-bottom: 1rem;
         font-size: 110%;
-        background: url();
+        color: white;
     }
 
     release-date{

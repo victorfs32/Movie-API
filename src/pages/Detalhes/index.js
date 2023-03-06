@@ -33,10 +33,7 @@ function Detalhes() {
 
     return (
         <Container>
-            <div className="movie" style={{background: `url(${movie.fundo})`,
-                                        
-                                        
-        }}>
+            <div className="movie" style={{background: `url(${movie.fundo})`}}>
                 <img src={movie.image} alt={movie.sinopse}/>
                 <div className="detalhes">
                     <h1>{movie.title}</h1>
