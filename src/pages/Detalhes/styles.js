@@ -11,7 +11,7 @@ export const Container = styled.div`
     color: white;
     font-family: "Lato", sans-serif;
   }
-
+  
   .movie {
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;

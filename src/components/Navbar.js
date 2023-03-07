@@ -22,6 +22,21 @@ const Navbar = () => {
       <h2>
         <Link to="/">Movies API</Link>
       </h2>
+      <span>
+        <Link to="/Lançamento">Lançamento</Link>
+      </span>
+      <span>
+        <Link to="/Rank">Top Rank</Link>
+      </span>
+      <span>
+        <Link to="/Lançamento"></Link>
+      </span>
+      <span>
+        <Link to="/Lançamento"></Link>
+      </span>
+      <span>
+        <Link to="/Lançamento"></Link>
+      </span>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
