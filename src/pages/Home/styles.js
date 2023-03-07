@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+
   h1 {
     text-align: center;
     margin: 4rem 0;
+    font-family: 'Poppins', sans-serif;
   }
 `;
 
@@ -16,6 +20,8 @@ export const MovieList = styled.ul`
 `;
 
 export const Movie = styled.li`
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,6 +35,8 @@ export const Movie = styled.li`
   span {
     font-weight: bold;
     font-size: 120%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
   }
 
   a {

@@ -1,15 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
 #navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #121212;
+  background-color: #15141F;
 }
 
 #navbar h2 a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: red;
+}
+
+#navbar h2 a:hover {
+  color: #8b0000 ;
 }
 
 #navbar form {
@@ -21,11 +31,16 @@
   padding: 0.2rem 0.8rem;
   border-radius: 4px;
   border: none;
+  background: #211F30;
+}
+
+input[type=text] {
+  color: white;
 }
 
 #navbar form button {
-  background-color: #f7d354;
-  border: 2px solid #f7d354;
+  background-color: #ff0000;
+  border: 2px solid #ff0000;
   border-radius: 4px;
   color: #000;
   padding: 0.3rem;
