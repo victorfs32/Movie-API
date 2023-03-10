@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Detalhes from "./pages/Detalhes";
 import Navbar from "./components/Navbar";
 import Lançamento from "./pages/Lançamento";
-import Rank from "./pages/Rank";
+import Rank from "./pages/Rank"; 
 
 ReactDOM.render(
   <BrowserRouter>
