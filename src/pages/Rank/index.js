@@ -19,7 +19,7 @@ function Home() {
   return (
     <Container>
       <Navbar />
-      <h1>FILMES POPULARES</h1>
+      <h1>BEM AVALIADOS</h1>
       <MovieList>
         {/* map usado para retorno o codigo pra cada interaçao */}
         {movies.map((movie) => {
